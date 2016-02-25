@@ -15,3 +15,5 @@
       JMX enabled by default
       Using config: /home/cheng/zookeeper-3.4.6/bin/../conf/zoo.cfg
       Mode: standalone
+
+停止：进入bin目录 ./zkServer.sh stop
