@@ -4,7 +4,7 @@ import com.cheng.dubbo.People;
 import com.cheng.dubbo.SpeakInterface;
 
 /**
- * Desc:
+ * Desc: 生产者
  * Author: Cheng
  * Date: 2016/2/19 0019
  */

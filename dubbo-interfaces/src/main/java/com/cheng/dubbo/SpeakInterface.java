@@ -1,7 +1,7 @@
 package com.cheng.dubbo;
 
 /**
- * Desc:
+ * Desc: 公共接口
  * Author: Cheng
  * Date: 2016/2/19 0019
  */
