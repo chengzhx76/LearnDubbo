@@ -8,8 +8,17 @@ import java.io.Serializable;
  * Date: 2016/2/19 0019
  */
 public class People implements Serializable {
+    private String name;
     private Integer age;
     private Integer sex;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
     public Integer getAge() {
         return age;
