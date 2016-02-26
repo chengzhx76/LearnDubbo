@@ -1,4 +1,4 @@
-# Dubbo
+# DubboDemo
 学习Dubbo
 
 # 启动 Zookeeper
@@ -26,4 +26,12 @@
 4. 重启ZK服务:       sh bin/zkServer.sh restart
 
 
-使用delete命令可以删除指定znode. 当该znode拥有子znode时, 必须先删除其所有子znode, 否则操作将失败. rmr命令可用于代替delete命令, rmr是一个递归删除命令, 如果发生指定节点拥有子节点时, rmr命令会首先删除子节点.
+使用delete命令可以删除指定znode. 当该znode拥有子znode时, 必须先删除其所有子znode, 否则操作将失败.
+rmr命令可用于代替delete命令, rmr是一个递归删除命令, 如果发生指定节点拥有子节点时, rmr命令会首先删除子节点.
+
+---
+整合了dubbo既是生产又是消费者--dubbo-provider-consumer 测试--test04
+
+是完全可以跑通的 消费者test01--test04是完全可以跑通的
+
+说明待整理！！!

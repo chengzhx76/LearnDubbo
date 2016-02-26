@@ -7,7 +7,16 @@
           http://code.alibabatech.com/schema/dubbo
           http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
-  <dubbo:provider registry="zk1"/>
+  <dubbo:application name="cheng-dubbo-provider-consumer"/>
 
-  <dubbo:reference id="growUpInterface" interface="com.cheng.dubbo.GrowUpInterface"/>
+  <dubbo:registry id="zk1" address="192.168.1.119:2181" protocol="zookeeper"/> <!-- 注意要关闭防火墙 -->
+
+  <dubbo:protocol id="mydubbo" name="dubbo" port="20887"/>
+
+  <dubbo:provider registry="zk1" protocol="mydubbo"/>
+
+  <bean name="allInfoInterface" class="com.cheng.dubbo.impl.AllInfoInterfaceImpl"/>
+
+  <dubbo:service interface="com.cheng.dubbo.AllInfoInterface" ref="allInfoInterface"/>
+
 </beans>
