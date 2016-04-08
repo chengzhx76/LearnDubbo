@@ -5,19 +5,27 @@
 解压：tar -zxvf zookeeper-3.4.6.tar.gz
 配置：进入conf目录重命名 mv zoo_sample.cfg zoo.cfg
       修改zoo.cfg文件 dataDir=/home/cheng/zookeeper-3.4.6/data
-启动：进入bin目录 ./zkServer.sh start
-      [root@localhost bin]# ./zkServer.sh start
+改变所属目录：
+      [root@localhost local]# chown cheng:cheng ./zookeeper-3.4.6/ -R
+      [root@localhost local]# chmod a+x *
+切换成普通用户：su - cheng
+启动：进入bin目录
+      [cheng@localhost bin]$ ./zkServer.sh start
       JMX enabled by default
       Using config: /home/cheng/zookeeper-3.4.6/bin/../conf/zoo.cfg
       Starting zookeeper ... STARTED
 查看是否启动：进入bin目录 ./zkServer.sh status
-      [root@localhost bin]#  ./zkServer.sh status
+      [cheng@localhost bin]$  ./zkServer.sh status
       JMX enabled by default
       Using config: /home/cheng/zookeeper-3.4.6/bin/../conf/zoo.cfg
       Mode: standalone
 
 停止：进入bin目录 ./zkServer.sh stop
 
+查看节点：
+[cheng@localhost bin]$ ./zkCli.sh
+[zk: localhost:2181(CONNECTED) 0] ls /
+[zookeeper]
 
 
 1. 启动ZK服务:       sh bin/zkServer.sh start
