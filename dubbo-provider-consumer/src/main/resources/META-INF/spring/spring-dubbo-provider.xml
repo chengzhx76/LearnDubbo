@@ -9,7 +9,7 @@
 
   <dubbo:application name="cheng-dubbo-provider-consumer"/>
 
-  <dubbo:registry id="zk1" address="192.168.1.119:2181" protocol="zookeeper"/> <!-- 注意要关闭防火墙 -->
+  <dubbo:registry id="zk1" address="192.168.1.108:2181" protocol="zookeeper"/> <!-- 注意要关闭防火墙 -->
 
   <dubbo:protocol id="mydubbo" name="dubbo" port="20887"/>
 
