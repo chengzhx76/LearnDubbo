@@ -14,6 +14,7 @@ import javax.annotation.Resource;
 public class AllInfoInterfaceImpl implements AllInfoInterface {
     @Resource
     private GrowUpInterface growUpInterface;
+
     public People getAllInfo(People people) {
         people = growUpInterface.addAge(people);
         people.setAge(99);
