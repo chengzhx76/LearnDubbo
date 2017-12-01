@@ -9,6 +9,7 @@ import com.cheng.dubbo.People;
  * Date: 2016/2/26 0026
  */
 public class NameInterfaceImpl implements NameInterface {
+    @Override
     public String getName(People people) {
         return "dubbo return "+people.getName();
     }

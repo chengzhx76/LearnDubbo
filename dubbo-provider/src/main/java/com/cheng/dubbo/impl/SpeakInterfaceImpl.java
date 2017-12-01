@@ -9,7 +9,7 @@ import com.cheng.dubbo.SpeakInterface;
  * Date: 2016/2/19 0019
  */
 public class SpeakInterfaceImpl implements SpeakInterface {
-
+    @Override
     public String speak(People people) {
         return "dubbo return " + people.getAge();
     }

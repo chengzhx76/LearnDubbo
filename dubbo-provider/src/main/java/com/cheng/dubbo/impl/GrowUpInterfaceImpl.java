@@ -9,6 +9,7 @@ import com.cheng.dubbo.People;
  * Date: 2016/2/26 0026
  */
 public class GrowUpInterfaceImpl implements GrowUpInterface {
+    @Override
     public People addAge(People people) {
         people.setAge(people.getAge()+1);
         return people;

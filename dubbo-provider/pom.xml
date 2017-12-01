@@ -21,32 +21,6 @@
       <groupId>com.alibaba</groupId>
       <artifactId>dubbo</artifactId>
       <version>2.5.7</version>
-      <exclusions>
-        <exclusion>
-          <groupId>org.springframework</groupId>
-          <artifactId>spring</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>com.101tec</groupId>
-      <artifactId>zkclient</artifactId>
-      <version>0.4</version>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-context</artifactId>
-      <version>4.1.6.RELEASE</version>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-core</artifactId>
-      <version>4.1.6.RELEASE</version>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-beans</artifactId>
-      <version>4.1.6.RELEASE</version>
     </dependency>
     <dependency>
       <groupId>com.cheng.dubbo</groupId>
@@ -54,8 +28,6 @@
       <version>1.0-SNAPSHOT</version>
     </dependency>
   </dependencies>
-
-
   <build>
 
     <resources>
@@ -116,13 +88,21 @@
             <configuration>
               <type>jar</type>
               <includeTypes>jar</includeTypes>
-              <useUniqueVersions>false</useUniqueVersions>
+              <!--<useUniqueVersions>false</useUniqueVersions>-->
               <outputDirectory>
                 ${project.build.directory}/lib
               </outputDirectory>
             </configuration>
           </execution>
         </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.6</source>
+          <target>1.6</target>
+        </configuration>
       </plugin>
     </plugins>
   </build>
