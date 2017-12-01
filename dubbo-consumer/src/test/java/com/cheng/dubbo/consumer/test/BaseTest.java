@@ -25,8 +25,8 @@ public class BaseTest {
     private GrowUpInterface growUpInterface;
 //    @Resource
 //    private SexInterface sexInterface;
-    @Resource
-    private AllInfoInterface allInfoInterface;
+//    @Resource
+//    private AllInfoInterface allInfoInterface;
 
     @Test
     public void test01() {
@@ -53,13 +53,13 @@ public class BaseTest {
         System.out.println("====================="+growUpInterface.addAge(people).getAge());
     }
 
-    @Test
-    public void test04() {
-        People people = new People();
-        people.setName("王大");
-        people.setAge(18);
-        people.setSex(0);
-        System.out.println("====================="+allInfoInterface.getAllInfo(people));
-    }
+//    @Test
+//    public void test04() {
+//        People people = new People();
+//        people.setName("王大");
+//        people.setAge(18);
+//        people.setSex(0);
+//        System.out.println("====================="+allInfoInterface.getAllInfo(people));
+//    }
 
 }

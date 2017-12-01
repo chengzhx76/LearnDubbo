@@ -9,7 +9,7 @@
 
   <dubbo:application name="cheng-dubbo-consumer"/>
 
-  <dubbo:registry id="zk1" address="192.168.1.128:2181" protocol="zookeeper"/> <!-- 注意要关闭防火墙 -->
+  <dubbo:registry id="zk1" address="115.29.47.207:2181" protocol="zookeeper"/> <!-- 注意要关闭防火墙 -->
 
   <dubbo:consumer registry="zk1"/>
 
@@ -17,5 +17,5 @@
   <dubbo:reference id="nameInterface" interface="com.cheng.dubbo.NameInterface"/>
   <dubbo:reference id="growUpInterface" interface="com.cheng.dubbo.GrowUpInterface"/>
   <!--<dubbo:reference id="sexInterface" interface="com.cheng.dubbo.SexInterface"/>-->
-  <dubbo:reference id="allInfoInterface" interface="com.cheng.dubbo.AllInfoInterface"/>
+  <!--<dubbo:reference id="allInfoInterface" interface="com.cheng.dubbo.AllInfoInterface"/>-->
 </beans>
