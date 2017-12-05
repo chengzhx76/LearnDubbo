@@ -9,7 +9,7 @@ import javax.annotation.Resource;
 /**
  * Desc:
  * Author: Cheng
- * Date: 2016/2/26 0026
+ * Date: 2016/2/26
  */
 public class AllInfoInterfaceImpl implements AllInfoInterface {
     @Resource
