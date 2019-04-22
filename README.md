@@ -43,3 +43,6 @@ rmr命令可用于代替delete命令, rmr是一个递归删除命令, 如果发�
 是完全可以跑通的 消费者test01--test04是完全可以跑通的
 
 说明待整理！！!
+
+
+mvn install:install-file -Dfile=dubbo-2.7.2-SNAPSHOT.jar -DgroupId=org.apache.dubbo -DartifactId=dubbo -Dversion=2.7.2-SNAPSHOT -Dpackaging=jar
