@@ -13,6 +13,7 @@
     <module>dubbo-interfaces</module>
     <module>dubbo-consumer</module>
     <module>dubbo-provider-consumer</module>
+    <module>simple-rpc-framework-core</module>
   </modules>
 
   <properties>
