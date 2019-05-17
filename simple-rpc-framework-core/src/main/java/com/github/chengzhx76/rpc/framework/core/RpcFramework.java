@@ -39,6 +39,7 @@ public class RpcFramework {
                                 ObjectInputStream input = new ObjectInputStream(socket.getInputStream());
                                 try {
                                     String methodName = input.readUTF();
+
                                     Class<?>[] parameterTypes = (Class<?>[]) input.readObject();
                                     Object[] arguments = (Object[]) input.readObject();
                                     ObjectOutputStream output = new ObjectOutputStream(socket.getOutputStream());
