@@ -13,7 +13,7 @@ public class ProviderMain {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(new String[]{"META-INF/spring/spring-dubbo-provider.xml"});
         context.start();
 
-        //System.in.read(); // 按任意键退出
+        System.in.read(); // 按任意键退出
 
 
         //Main.main(args);
