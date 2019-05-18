@@ -14,6 +14,7 @@
     <module>dubbo-consumer</module>
     <module>dubbo-provider-consumer</module>
     <module>simple-rpc-framework-core</module>
+    <module>simple-spring-schema-demo</module>
   </modules>
 
   <properties>
@@ -45,6 +46,11 @@
       <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-context</artifactId>
+        <version>${spring.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-beans</artifactId>
         <version>${spring.version}</version>
       </dependency>
       <dependency>
