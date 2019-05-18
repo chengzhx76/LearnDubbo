@@ -23,6 +23,10 @@ public class SpringSchemaTest {
     public void test001() {
         String name = people.getName();
         System.out.println(name);
+        int age = people.getAge();
+        System.out.println(age);
+        int sex = people.getSex();
+        System.out.println(sex);
     }
 
 }

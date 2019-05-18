@@ -22,19 +22,21 @@ public class SimpleBeanDefintionParser implements BeanDefinitionParser {
     @Override
     public BeanDefinition parse(Element element, ParserContext parserContext) {
 
-        System.out.println("SimpleBeanDefintionParser.parse===========>");
-
         RootBeanDefinition beanDefinition = new RootBeanDefinition();
         beanDefinition.setBeanClass(beanClass);
         beanDefinition.setLazyInit(false);
 
         String name = element.getAttribute("name");
-        int age = element.getAttribute("age") != null ? Integer.parseInt(element.getAttribute("age")) : -1;
-        int sex = element.getAttribute("sex") != null ? Integer.parseInt(element.getAttribute("age")) : 1;
-        parserContext.getRegistry().registerBeanDefinition(name, beanDefinition);
+        String age = element.getAttribute("age");
+        String sex = element.getAttribute("sex");
         beanDefinition.getPropertyValues().addPropertyValue("name", name);
-        beanDefinition.getPropertyValues().addPropertyValue("age", age);
-        beanDefinition.getPropertyValues().addPropertyValue("sex", sex);
+        if (age != null && age.length() > 0) {
+            beanDefinition.getPropertyValues().addPropertyValue("age", age);
+        }
+        if (sex != null && sex.length() > 0) {
+            beanDefinition.getPropertyValues().addPropertyValue("sex", sex);
+        }
+        parserContext.getRegistry().registerBeanDefinition(name, beanDefinition);
         return beanDefinition;
     }
 }

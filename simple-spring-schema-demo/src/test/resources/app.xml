@@ -8,6 +8,6 @@
 	        http://github.org/chengzhx76/schema/simple
 	        http://github.org/chengzhx76/schema/simple.xsd">
 
-  <simple:people id="zhangsan" name="张三" age="18"/>
+  <simple:people id="zhangsan" name="张三"/>
 
 </beans>

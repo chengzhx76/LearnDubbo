@@ -171,6 +171,7 @@ public class SchemaTest {
 ## 参考文献
 - [Extensible XML authoring](http://docs.spring.io/spring/docs/current/spring-framework-reference/htmlsingle/#xml-custom)
 - [基于Spring可扩展Schema提供自定义配置支持](http://blog.csdn.net/cutesource/article/details/5864562)
+- [Spring自定义命名空间](https://blog.csdn.net/u014082714/article/details/81283952)
 
 
 
