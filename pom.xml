@@ -15,6 +15,7 @@
     <module>dubbo-provider-consumer</module>
     <module>simple-rpc-framework-core</module>
     <module>simple-spring-schema-demo</module>
+      <module>dubbo-dynamic-class</module>
   </modules>
 
   <properties>
