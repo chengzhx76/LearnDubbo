@@ -15,7 +15,7 @@
     <module>dubbo-provider-consumer</module>
     <module>simple-rpc-framework-core</module>
     <module>simple-spring-schema-demo</module>
-      <module>dubbo-dynamic-class</module>
+    <module>dubbo-dynamic-class</module>
   </modules>
 
   <properties>
@@ -62,6 +62,11 @@
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>dubbo-interfaces</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>dubbo-dynamic-class</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>

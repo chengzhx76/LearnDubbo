@@ -9,18 +9,19 @@
 
   <dubbo:application name="cheng-dubbo-provider"/>
 
-  <dubbo:registry id="zk1" address="139.196.35.134:2181" protocol="zookeeper"/> <!-- 注意要关闭防火墙 -->
+  <!--<dubbo:registry id="zk1" address="139.196.35.134:2181" protocol="zookeeper"/> &lt;!&ndash; 注意要关闭防火墙 &ndash;&gt;-->
+  <dubbo:registry address="139.196.35.134:2181"/> <!-- 注意要关闭防火墙 -->
 
-  <dubbo:protocol id="dubbo" name="dubbo" port="20886"/>
+  <!--<dubbo:protocol id="myDubbo" name="dubbo" port="20886"/>-->
 
-  <dubbo:provider registry="zk1" protocol="dubbo"/>
+  <!--<dubbo:provider registry="zk1" protocol="myDubbo"/>-->
 
   <bean name="speakInterface" class="com.cheng.dubbo.impl.SpeakInterfaceImpl"/>
-  <!--<bean id="nameInterface" class="com.cheng.dubbo.impl.NameInterfaceImpl"/>
-  <bean name="growUpInterface" class="com.cheng.dubbo.impl.GrowUpInterfaceImpl"/>-->
+  <!--<bean id="nameInterface" class="com.cheng.dubbo.impl.NameInterfaceImpl"/>-->
+  <!--<bean name="growUpInterface" class="com.cheng.dubbo.impl.GrowUpInterfaceImpl"/>-->
 
   <dubbo:service interface="com.cheng.dubbo.SpeakInterface" ref="speakInterface"/>
-  <!--<dubbo:service interface="com.cheng.dubbo.NameInterface" ref="nameInterface"/>
-  <dubbo:service interface="com.cheng.dubbo.GrowUpInterface" ref="growUpInterface"/>-->
+  <!--<dubbo:service interface="com.cheng.dubbo.NameInterface" ref="nameInterface"/>-->
+  <!--<dubbo:service interface="com.cheng.dubbo.GrowUpInterface" ref="growUpInterface"/>-->
 
 </beans>
