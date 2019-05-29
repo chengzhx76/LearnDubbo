@@ -4,7 +4,7 @@ package org.apache.dubbo.rpc;
 import org.apache.dubbo.common.URL;
 import org.apache.dubbo.common.extension.ExtensionLoader;
 
-public class Protocol$Adaptive implements Protocol {
+public class Protocol$AdaptiveTest implements Protocol {
 
     @Override
     public void destroy() {
