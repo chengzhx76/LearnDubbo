@@ -19,10 +19,10 @@ import javax.annotation.Resource;
 public class BaseTest {
     @Resource
     private SpeakInterface speakInterface;
-    @Resource
-    private NameInterface nameInterface;
-    @Resource
-    private GrowUpInterface growUpInterface;
+    //@Resource
+    //private NameInterface nameInterface;
+    //@Resource
+    //private GrowUpInterface growUpInterface;
 //    @Resource
 //    private SexInterface sexInterface;
 //    @Resource
@@ -36,22 +36,22 @@ public class BaseTest {
         System.out.println("====================="+speakInterface.speak(people));
     }
 
-    @Test
-    public void test02() {
-        People people = new People();
-        people.setName("王大");
-        people.setAge(18);
-        people.setSex(0);
-        System.out.println("====================="+nameInterface.getName(people));
-    }
-
-    @Test
-    public void test03() {
-        People people = new People();
-        people.setAge(18);
-        people.setSex(0);
-        System.out.println("====================="+growUpInterface.addAge(people).getAge());
-    }
+    //@Test
+    //public void test02() {
+    //    People people = new People();
+    //    people.setName("王大");
+    //    people.setAge(18);
+    //    people.setSex(0);
+    //    System.out.println("====================="+nameInterface.getName(people));
+    //}
+    //
+    //@Test
+    //public void test03() {
+    //    People people = new People();
+    //    people.setAge(18);
+    //    people.setSex(0);
+    //    System.out.println("====================="+growUpInterface.addAge(people).getAge());
+    //}
 
 //    @Test
 //    public void test04() {

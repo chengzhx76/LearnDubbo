@@ -16,6 +16,7 @@
     <module>simple-rpc-framework-core</module>
     <module>simple-spring-schema-demo</module>
     <module>dubbo-dynamic-class</module>
+    <module>simple-zookeeper-demo</module>
   </modules>
 
   <properties>
