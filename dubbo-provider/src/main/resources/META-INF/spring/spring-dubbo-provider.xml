@@ -9,12 +9,11 @@
 
   <dubbo:application name="cheng-dubbo-provider"/>
 
-  <!--<dubbo:registry id="zk1" address="139.196.35.134:2181" protocol="zookeeper"/> &lt;!&ndash; 注意要关闭防火墙 &ndash;&gt;-->
-  <dubbo:registry address="139.196.35.134:2181"/> <!-- 注意要关闭防火墙 -->
+  <dubbo:registry id="zk1" address="139.196.35.134:2181" protocol="zookeeper"/> <!-- 注意要关闭防火墙 -->
 
-  <!--<dubbo:protocol id="myDubbo" name="dubbo" port="20886"/>-->
+  <dubbo:protocol id="myDubbo" name="dubbo" port="20886"/>
 
-  <!--<dubbo:provider registry="zk1" protocol="myDubbo"/>-->
+  <dubbo:provider registry="zk1" protocol="myDubbo"/>
 
   <bean name="speakInterface" class="com.cheng.dubbo.impl.SpeakInterfaceImpl"/>
   <!--<bean id="nameInterface" class="com.cheng.dubbo.impl.NameInterfaceImpl"/>-->
