@@ -7,13 +7,15 @@
           http://code.alibabatech.com/schema/dubbo
           http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
-  <dubbo:application name="cheng-dubbo-provider"/>
+  <dubbo:application name="dubbo-provider"/>
 
   <dubbo:registry id="zk1" address="139.196.35.134:2181" protocol="zookeeper"/> <!-- 注意要关闭防火墙 -->
 
   <dubbo:protocol id="myDubbo" name="dubbo" port="20886"/>
 
   <dubbo:provider registry="zk1" protocol="myDubbo"/>
+
+  <!--<dubbo:config-center address="zookeeper://139.196.35.134:2181"/>-->
 
   <bean name="speakInterface" class="com.cheng.dubbo.impl.SpeakInterfaceImpl"/>
   <!--<bean id="nameInterface" class="com.cheng.dubbo.impl.NameInterfaceImpl"/>-->
