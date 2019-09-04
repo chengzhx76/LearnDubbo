@@ -17,6 +17,7 @@
     <module>simple-spring-schema-demo</module>
     <module>dubbo-dynamic-class</module>
     <module>simple-zookeeper-demo</module>
+    <module>motan-demo</module>
   </modules>
 
   <properties>
