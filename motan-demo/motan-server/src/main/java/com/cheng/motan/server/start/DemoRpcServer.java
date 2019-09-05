@@ -1,4 +1,4 @@
-package com.cheng.motan.server;
+package com.cheng.motan.server.start;
 
 import com.weibo.api.motan.common.MotanConstants;
 import com.weibo.api.motan.util.MotanSwitcherUtil;

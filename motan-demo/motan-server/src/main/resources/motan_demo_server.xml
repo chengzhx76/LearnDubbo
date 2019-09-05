@@ -21,13 +21,19 @@
                   maxWorkerThread="800" minWorkerThread="20"/>
 
   <!-- 通用配置，多个rpc服务使用相同的基础配置. group和module定义具体的服务池。export格式为“protocol id:提供服务的端口”-->
-  <motan:basicService export="demoMotan:8001"
-                      group="motan-demo-rpc" accessLog="false" shareChannel="true" module="motan-demo-rpc"
-                      application="myMotanDemo" registry="registry" id="serviceBasicConfig"/>
+  <motan:basicService id="serviceBasicConfig"
+                      export="demoMotan:8001"
+                      group="motan-demo-rpc"
+                      accessLog="false"
+                      shareChannel="true"
+                      module="motan-demo-rpc"
+                      application="myMotanDemo"
+                      registry="registry"/>
 
   <!-- 具体rpc服务配置，声明实现的接口类。-->
   <motan:service interface="com.cheng.motan.api.NameService"
-                 ref="nameServiceImpl" export="demoMotan:8001" basicService="serviceBasicConfig">
-  </motan:service>
+                 ref="nameServiceImpl"
+                 export="demoMotan:8001"
+                 basicService="serviceBasicConfig"/>
 
 </beans>

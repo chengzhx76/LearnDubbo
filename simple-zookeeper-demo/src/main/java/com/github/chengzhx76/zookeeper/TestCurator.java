@@ -13,11 +13,12 @@ import org.apache.curator.retry.RetryNTimes;
  */
 public class TestCurator {
 
-    public static void main(String[] args) {
-
+    public static void main(String[] args) throws Exception {
+        testCreate();
     }
 
-    private void testCreate() {
+
+    private static void testCreate() throws Exception {
         CuratorFrameworkFactory.Builder builder = CuratorFrameworkFactory.builder()
                 .connectString("139.196.35.134:2181")
                 .retryPolicy(new RetryNTimes(1, 1000))
@@ -36,6 +37,9 @@ public class TestCurator {
             }
         });
         client.start();
+//        client.create().forPath("/cheng/test");
+        //创建永久节点
+        client.create().forPath("/cheng","/test data 2".getBytes());
     }
 
 }
