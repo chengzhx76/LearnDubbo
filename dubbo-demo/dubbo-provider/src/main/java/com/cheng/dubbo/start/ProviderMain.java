@@ -1,6 +1,7 @@
 package com.cheng.dubbo.start;
 
 
+import org.apache.dubbo.container.Main;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
@@ -17,6 +18,6 @@ public class ProviderMain {
 
 
 
-        //Main.main(args);
+        Main.main(args);
     }
 }
