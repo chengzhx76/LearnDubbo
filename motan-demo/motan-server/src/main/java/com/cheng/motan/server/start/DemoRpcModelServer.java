@@ -45,8 +45,8 @@ public class DemoRpcModelServer {
 
         // 配置RPC协议
         ProtocolConfig protocol = new ProtocolConfig();
-        protocol.setName("demoMotan");
-        protocol.setId("motan");
+        protocol.setName("motan");
+        protocol.setId("demoMotan");
         protocol.setMaxServerConnection(80000);
         protocol.setMaxContentLength(1048576);
         protocol.setMaxWorkerThread(800);
